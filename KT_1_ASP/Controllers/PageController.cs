@@ -28,11 +28,10 @@ namespace KT_1_ASP.Controllers
         }
 
         [HttpPost]
-        public IActionResult DisplayMessage(string message)
-        {                      
+        public IActionResult Edit(string message)
+        {
             ViewBag.Message = message;
-
-            return View("DisplayMessage");
+            return View();
         }
 
     }
